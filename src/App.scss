@@ -1,0 +1,52 @@
+
+// $Psychic: #f8a5c2;
+// $Fighting: #f0932b;
+// $Fairy: #c44569;
+// $Normal: #f6e58d;
+// $Grass: #badc58;
+// $Metal: #95afc0;
+// $Water: #3dc1d3;
+// $Lightning: #f9ca24;
+// $Darkness: #574b90;
+// $Colorless: #FFF;
+// $Fire: #eb4d4b;
+
+$cardBackground: #f3f4f7;
+
+.pokemon-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+}
+.pokemon-item {
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: $cardBackground;
+    display: flex;
+    height: 250px;
+    width: 50%;
+    margin-top: 10px;
+    &__info {
+        width: 100%;
+        margin-right: 20px;
+    }
+    &__avata {
+        margin-right: 20px;
+        height: 100%;
+        width: 150px;
+    }
+    &__icon {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 10px;
+    }
+    &:hover {
+        .pokemon-item__icon {
+            display: block;
+        }
+    }
+}
